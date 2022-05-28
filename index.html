@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cbc7fef490.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+               <img src="/assets/logo.png" alt="Logo Bruna">
+            </div>
+        </div>
+        <ul>
+            <li> <a target="_blank" href="https://github.com/brubastos">Github</a> </li>
+            <li> <a target="_blank" href="https://www.linkedin.com/in/bruna-bastos-0a6b63178/">LinkedIn</a></li>
+            <li> <a target="_blank" href="mailto:brusbastos@hotmail.com">E-mail</a></li>
+            <li> <a target="_blank" href="https://wa.me/5551997637779">Whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Bruna Bastos</h1>
+                <h5>Front-End Developer</h5>
+                <h3>Sobre mim</h3>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Formada em Processos Gerenciais e atuando na área administrativa há três anos, agora estou em transição de carreira com foco na área Front-End. Para isso comecei estudar HTML, CSS e Javascript buscando o aprendizado e aperfeiçoamento diário para futuramente conquistar meu lugar no mercado tech.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu e-mail">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotacao');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
